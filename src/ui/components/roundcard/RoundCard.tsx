@@ -1,13 +1,21 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {RoundModel} from "../../../data/game/RoundModel";
 import "./RoundCard.scss";
 import Divider from "../divider/Divider";
+import {PlaceModel} from "../../../data/game/PlaceModel";
 
 const RoundCard = ({
     round,
 }: {
     round: RoundModel
 }) => {
+    const [places, setPlaces] = useState<PlaceModel[]>([])
+
+    useEffect(() => {
+        const places = round.places.sort((a, b) => a.number - b.number);
+        setPlaces(places);
+    }, []);
+
     const getHeaderText = () => {
         if (round.isDone) {
             return round.places.find((place) => place.number === 1)?.player.name + " hat gewonnen";
@@ -29,7 +37,7 @@ const RoundCard = ({
             { round.places.length > 0 && <>
                 <Divider />
                 <div className="RoundCardPlaceList">
-                    { round.places.map((place) => {
+                    { places.map((place) => {
                         return (
                             <div className="RoundCardPlace">
                                 <h4>{place.number}.</h4>

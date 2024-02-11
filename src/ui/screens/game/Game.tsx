@@ -104,7 +104,8 @@ const Game = () => {
         })
 
         if (currentRound && currentRound.places.length === currentRound.participants.length) {
-            pointMap.set(currentRound.places[0].player.uid, 1)
+            const winnerPlace = currentRound.places.find((place) => place.number === 1)!!
+            pointMap.set(winnerPlace.player.uid, 1)
         }
 
         if (!game.rounds) return;

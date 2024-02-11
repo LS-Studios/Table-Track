@@ -1,0 +1,55 @@
+@import "src/ui/components/GlobalStyles";
+
+.RoundCard {
+  @extend .card;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  width: 350px;
+}
+
+.RoundCardRoundHeader {
+  padding: 6px;
+}
+
+.RoundCardPlayerLeft {
+  padding: 6px;
+  font-style: italic;
+}
+
+.RoundCardPlaceList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  gap: 6px;
+}
+
+.RoundCardPlace {
+  @extend .card;
+  width: 315px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: tomato;
+
+  h4 {
+    margin: 0;
+  }
+
+  .RoundCardPlacePlayerName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+}

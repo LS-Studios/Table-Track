@@ -1,0 +1,20 @@
+@import "src/ui/components/GlobalStyles";
+
+.Button {
+  @extend .card;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.Button.disabled {
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+}

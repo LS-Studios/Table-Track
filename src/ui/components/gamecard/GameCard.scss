@@ -1,0 +1,21 @@
+@import "src/ui/components/GlobalStyles";
+
+.GameCard {
+  @extend .card;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  width: 350px;
+
+  cursor: pointer;
+}
+
+.GameCardHeader {
+  padding: 6px;
+}

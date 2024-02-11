@@ -1,0 +1,20 @@
+@import "src/ui/components/GlobalStyles";
+
+.RankCard {
+  @extend .card;
+
+  background-color: tomato;
+  width: 330px;
+}
+
+.RankCardContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow-wrap: break-word;
+
+  margin: 0;
+  padding: 0 4px 0 4px;
+}

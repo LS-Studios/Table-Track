@@ -1,0 +1,12 @@
+.NameDialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  gap: 10px;
+
+  h3 {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,23 @@
+@import "src/ui/components/GlobalStyles";
+
+.inputField {
+  @extend .card;
+
+  font-size: 16px;
+
+  text-align: center;
+  font-weight: bold;
+
+  width: 100%;
+
+  outline: none;
+
+  &::placeholder {
+    color: white;
+    opacity: 0.75;
+  }
+
+  &:focus {
+    border: 1.25px solid #fff;
+  }
+}

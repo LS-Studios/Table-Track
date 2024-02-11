@@ -1,0 +1,31 @@
+@import "src/ui/components/GlobalStyles";
+
+.PlayerSelectionDialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  gap: 10px;
+}
+
+.PlayerSelectionDialogContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 6px;
+}
+
+.PlayerSelectionDialogItem {
+  @extend .card;
+  width: 300px;
+  cursor: pointer;
+}
+
+.PlayerSelectionDialogNoPlayersText {
+    font-style: italic;
+    margin: 10px;
+    font-weight: lighter;
+}

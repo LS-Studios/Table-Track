@@ -1,0 +1,16 @@
+.JoinServerDialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  gap: 10px;
+}
+
+.JoinServerDialogButtonRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

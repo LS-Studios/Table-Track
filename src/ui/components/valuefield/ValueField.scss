@@ -1,0 +1,11 @@
+@import "src/ui/components/GlobalStyles";
+
+.ValueField {
+  @extend .card;
+
+  text-align: center;
+}
+
+.ValueField.clickable {
+  cursor: pointer;
+}
